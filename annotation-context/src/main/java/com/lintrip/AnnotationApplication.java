@@ -12,7 +12,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AnnotationApplication {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-        Person person = (Person) context.getBean("person");
+        Person person = (Person) context.getBean("pingan");
+        System.out.println();
         System.out.println(person);
+        String[] beanNames = context.getBeanDefinitionNames();
+        for (String beanName:beanNames) {
+            System.out.println(beanName);
+        }
     }
 }

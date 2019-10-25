@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <bean id="person" class="com.lintrip.domain.Person">
+    <bean id="person" name="pingan" class="com.lintrip.domain.Person">
         <property name="age" value="10"/>
         <property name="name" value="张三丰"/>
     </bean>
